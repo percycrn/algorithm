@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * 1 1 1 1 0
  */
 
-public class Maze {
+public class MazeMatrix {
     private static int[][] maze = new int[][]{{0, 1, 1, 1, 1}, {0, 0, 0, 0, 0}, {0, 0, 0, 1, 0}, {1, 1, 1, 1, 0}};
     private static int[][] dir = new int[][]{{1, 0}, {-1, 0}, {0, -1}, {0, 1}}; // 上下左右
     private static ArrayList<String> arrayList = new ArrayList<>();

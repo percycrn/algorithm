@@ -1,9 +1,9 @@
-package m_thirteen;
+package m_thirteen.util;
 
 public class NodeTable {
     private LinkedList[] linkedLists;
 
-    NodeTable(int[][] matrix) {
+    public NodeTable(int[][] matrix) {
         linkedLists = new LinkedList[matrix.length];
         for (int i = 0; i < matrix.length; i++) {
             linkedLists[i] = addList(matrix[i], i);
@@ -21,7 +21,11 @@ public class NodeTable {
         return linkedList;
     }
 
-    void print() {
+    public LinkedList getLinkedList(int x){
+        return linkedLists[x];
+    }
+
+    public void print() {
         for (LinkedList linkedList : linkedLists) {
             linkedList.print();
         }
